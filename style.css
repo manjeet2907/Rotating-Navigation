@@ -11,12 +11,7 @@ body{
     margin:0;
     padding:0;
     overflow-x: hidden;
-    /* display:flex; */
-    /* height: 100vh; */
-    /* flex-direction: column; */
-    /* justify-content: center;
-    align-: center; */
-    /* margin:0; */
+  
 }
 .contain {
     background-color: honeydew;
@@ -38,8 +33,8 @@ body{
 }
 
 .ocbutton{
-    position: relative;
     background-color: indianred;
+    position: relative;
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -51,7 +46,7 @@ body{
 
 .ocbutton button{
     position: absolute;
-    top:50%;
+    /* top:50%; */
     cursor: pointer;
     height: 100px;
     background: transparent;
@@ -61,42 +56,28 @@ body{
 }
 
 .ocbutton button#open{
-    top:50%;
-    left:60%;
+    top:45%;
+    left:65%;
     color:white; 
 }
+
 .ocbutton button#close{
+    top:75%;
     color:white;
-    /* left: 60px;   */
+    left: 65%;  
     transform: rotate(90deg);
     transform-origin: top left;
 }
 
-
 .contain.show-nav + nav li {
     transform: translateX(0);
-    transition-delay: 0.3s;
+    transition-delay: 0.3s transform linear;
 }
+
 .circle button:focus {
     outline: none;
-  }
-  
-
-.content{
-    margin: auto;
-    width:80vw;
-    margin: 5S0px auto; 
-
-} 
-img{
-        max-width: 100%;
 }
-
-
-h4{
   
-    font-style: italic;
-}
 nav{
     position: fixed;
     bottom:50px;
@@ -108,22 +89,35 @@ nav i{
 }
 nav li{
     list-style: none;
-    margin:10px;
+    margin:5px;
     font-size: 1.5em;
     transform: translateX(-100%);
 }
 
 nav ul li + li {
-    margin-left: 15px;
+    margin-left: 10px;
     transform: translateX(-150%);
 }
-  
+
 nav ul li + li + li {
-    margin-left: 30px;
+    margin-left: 25px;
     transform: translateX(-200%);
 }
 nav ul li + li + li + li{
-    margin-left: 45px;
+    margin-left: 40px;
     transform: translateX(-250%);
 }
 
+.content{
+    margin: auto;
+    width:80vw;
+    margin: 5S0px auto; 
+} 
+
+img{
+        max-width: 100%;
+}
+
+h4{  
+    font-style: italic;
+}

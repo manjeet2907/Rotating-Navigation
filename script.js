@@ -1,11 +1,11 @@
-const open = document.getElementById('open');
-const Close = document.getElementById('close');
-const container = document.querySelector('.contain');
+const open = document.getElementById('open')
+const close = document.getElementById('close')
+const contain = document.querySelector('.contain')
 
-Open.addEventListner('click' , () => {
-    container.classList.add('show-nav')
+open.addEventListner('click' , () => {
+    contain.classList.add('show-nav')
 })
 
-Close.addEventListner('click' , () => {
-    container.classList.remove('show-nav')}
-    )
+close.addEventListner('click' , () => {
+    contain.classList.remove('show-nav')
+})
